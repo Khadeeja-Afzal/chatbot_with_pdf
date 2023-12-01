@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with PDFs</title>
+</head>
+
+<body>
+    <h1>Chat with Your Own PDF</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose PDF file(s):</label>
+        <input type="file" name="file" id="file" accept=".pdf" multiple>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+
+</html>
