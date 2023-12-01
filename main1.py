@@ -21,7 +21,7 @@ PINECONE_API_KEY = os.environ['PINECONE_API_KEY']
 PINECONE_ENV = "gcp-starter"
      
 pinecone.init(      
-	api_key='acc743cc-e9f8-489d-b551-dba8ce4e8494',      
+	api_key='',      
 	environment='gcp-starter'      
 )      
 index_name = pinecone.Index('pdfbot')
@@ -40,7 +40,7 @@ print(index_stats_response)
 embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
 # Define PDF file path#
-pdf_path = "C:/Users/NKU/Downloads/Chatbot_with_pdf/2nation_theory.pdf."
+pdf_path = ""
 
 # Extract text from PDF file
 with open(pdf_path, "rb") as f:
