@@ -10,18 +10,18 @@ from langchain.llms import OpenAI
 
 # KEYS, MODELS and ENV Related Settings
 import os
-os.environ["OPENAI_API_KEY"] = ""
+os.environ["OPENAI_API_KEY"] = "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"
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
 embed_model = "text-embedding-ada-002"
 
 
-os.environ["PINECONE_API_KEY"] = ""
+os.environ["PINECONE_API_KEY"] = "acc743cc-e9f8-489d-b551-dba8ce4e8494"
 PINECONE_API_KEY = os.environ['PINECONE_API_KEY']
 PINECONE_ENV = "gcp-starter"
      
 pinecone.init(      
-	api_key='',      
+	api_key='acc743cc-e9f8-489d-b551-dba8ce4e8494',      
 	environment='gcp-starter'      
 )      
 index_name = pinecone.Index('pdfbot')
