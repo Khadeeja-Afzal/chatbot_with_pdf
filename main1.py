@@ -10,7 +10,7 @@ from langchain.llms import OpenAI
 
 # KEYS, MODELS and ENV Related Settings
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "sk-"
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
 embed_model = "text-embedding-ada-002"
